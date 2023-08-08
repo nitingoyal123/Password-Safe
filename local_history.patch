@@ -1,0 +1,211 @@
+Index: app/src/main/res/layout/dialog_box_update_password_record.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/dialog_box_update_password_record.xml b/app/src/main/res/layout/dialog_box_update_password_record.xml
+--- a/app/src/main/res/layout/dialog_box_update_password_record.xml	
++++ b/app/src/main/res/layout/dialog_box_update_password_record.xml	(date 1691390955369)
+@@ -1,6 +1,199 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+-             android:layout_width="match_parent"
+-             android:layout_height="match_parent">
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent">
++
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="match_parent"
++        android:orientation="vertical"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent">
++
++
++        <TextView
++            android:id="@+id/txtRecyclerViewItemPurpose"
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:gravity="center"
++            android:textColor="@color/teal_200"
++            android:text="PURPOSE"
++            android:layout_marginBottom="15dp"
++            android:textSize="40sp"
++            android:textStyle="bold" />
++
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:orientation="vertical"
++            android:weightSum="3">
++
++            <LinearLayout
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_weight="1"
++                android:layout_marginTop="40dp">
++
++                <TextView
++                    android:layout_width="0dp"
++                    android:layout_height="wrap_content"
++                    android:layout_weight="1"
++                    android:textColor="@color/teal_200"
++                    android:layout_marginStart="5dp"
++                    android:textSize="27sp"
++                    android:text="Username"
++                    android:gravity="start"/>
++                <TextView
++                    android:id="@+id/txtRecyclerViewItemUsername"
++                    android:layout_width="0dp"
++                    android:layout_height="wrap_content"
++                    android:textSize="27sp"
++                    android:textColor="@color/teal_200"
++                    android:layout_marginStart="10dp"
++                    android:layout_weight="1"
++                    android:text="Username"
++                    android:gravity="start"/>
++
++            </LinearLayout>
++            <LinearLayout
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_marginTop="50dp">
++
++                <TextView
++                    android:layout_width="0dp"
++                    android:layout_height="wrap_content"
++                    android:layout_weight="1"
++                    android:layout_marginStart="5dp"
++                    android:textSize="27sp"
++                    android:textColor="@color/teal_200"
++                    android:text="Email"
++                    android:gravity="start"/>
++                <TextView
++                    android:id="@+id/txtRecyclerViewItemEmail"
++                    android:layout_width="0dp"
++                    android:layout_height="wrap_content"
++                    android:textSize="27sp"
++                    android:layout_marginStart="10dp"
++                    android:layout_weight="1"
++                    android:text="Email"
++                    android:textColor="@color/teal_200"
++                    android:gravity="start"/>
++
++            </LinearLayout>
++            <LinearLayout
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_marginTop="50dp">
++
++                <TextView
++                    android:layout_width="0dp"
++                    android:textColor="@color/teal_200"
++                    android:layout_height="wrap_content"
++                    android:layout_weight="1"
++                    android:layout_marginStart="5dp"
++                    android:textSize="27sp"
++                    android:text="Password"
++                    android:gravity="start"/>
++                <TextView
++                    android:id="@+id/txtRecyclerViewItemPassword"
++                    android:layout_width="0dp"
++                    android:layout_height="wrap_content"
++                    android:textSize="27sp"
++                    android:textColor="@color/teal_200"
++                    android:layout_marginStart="10dp"
++                    android:layout_weight="1"
++                    android:text="Password"
++                    android:gravity="start"/>
++
++            </LinearLayout>
++
++        </LinearLayout>
++
++        <androidx.constraintlayout.widget.ConstraintLayout
++            android:layout_width="match_parent"
++            android:layout_height="match_parent">
+ 
++            <LinearLayout
++
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:orientation="horizontal"
++                android:layout_marginBottom="20dp"
++                app:layout_constraintBottom_toBottomOf="parent">
++
++                <androidx.cardview.widget.CardView
++                    android:layout_width="0dp"
++                    android:layout_height="wrap_content"
++                    android:layout_margin="10dp"
++                    android:layout_weight="1"
++                    app:cardBackgroundColor="@color/teal_200"
++                    app:cardCornerRadius="5dp"
++                    app:cardElevation="5dp">
++
++                    <TextView
++                        android:id="@+id/txtRecyclerViewItemDelete"
++                        android:layout_width="match_parent"
++                        android:layout_height="match_parent"
++                        android:layout_margin="6dp"
++                        android:gravity="center"
++                        android:text="Delete"
++                        android:textColor="@color/black"
++                        android:textSize="26sp" />
++
++                </androidx.cardview.widget.CardView>
++
++                <androidx.cardview.widget.CardView
++                    android:layout_width="0dp"
++                    android:layout_height="wrap_content"
++                    android:layout_margin="10dp"
++                    android:layout_weight="1"
++                    app:cardBackgroundColor="@color/teal_200"
++                    app:cardCornerRadius="5dp"
++                    app:cardElevation="5dp">
++
++                    <TextView
++                        android:id="@+id/txtRecyclerViewItemUpdate"
++                        android:layout_width="match_parent"
++                        android:layout_height="match_parent"
++                        android:layout_margin="6dp"
++                        android:gravity="center"
++                        android:text="Update"
++                        android:textColor="@color/black"
++                        android:textSize="26sp" />
++
++                </androidx.cardview.widget.CardView>
++
++                <androidx.cardview.widget.CardView
++                    android:layout_width="0dp"
++                    android:layout_height="wrap_content"
++                    android:layout_margin="10dp"
++                    android:layout_weight="1"
++                    app:cardBackgroundColor="@color/teal_200"
++                    app:cardCornerRadius="5dp"
++                    app:cardElevation="5dp">
++
++                    <TextView
++                        android:id="@+id/txtRecyclerViewItemCancel"
++                        android:layout_width="match_parent"
++                        android:layout_height="match_parent"
++                        android:layout_margin="6dp"
++                        android:gravity="center"
++                        android:text="Cancel"
++                        android:textColor="@color/black"
++                        android:textSize="26sp" />
++
++                </androidx.cardview.widget.CardView>
++
++            </LinearLayout>
++
++        </androidx.constraintlayout.widget.ConstraintLayout>
++
++
++    </LinearLayout>
++
+ </androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file

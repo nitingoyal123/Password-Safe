@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:background="#1E2121"
+    android:padding="20dp"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/teal_200"
+            android:text="Add Data"
+            android:layout_marginBottom="15dp"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:cursorVisible="true"
+                    android:id="@+id/edtAddPurpose"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="23sp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:hint="Enter purpose..."
+                    android:paddingStart="5dp"
+                    android:textColorHint="#2F2F2F"
+                    android:background="@color/teal_200"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:gravity="start"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/edtAddUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="23sp"
+                    android:paddingBottom="2dp"
+                    android:cursorVisible="true"
+                    android:paddingTop="2dp"
+                    android:paddingStart="5dp"
+                    android:textColorHint="#2F2F2F"
+                    android:inputType="text"
+                    android:hint="Enter Username..."
+                    android:background="@color/teal_200"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/edtAddEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="23sp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:layout_weight="1"
+                    android:cursorVisible="true"
+                    android:inputType="text"
+                    android:hint="Enter Email..."
+                    android:textColorHint="#2F2F2F"
+                    android:paddingStart="5dp"
+                    android:background="@color/teal_200"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/edtAddPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="23sp"
+                    android:cursorVisible="true"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:background="@color/teal_200"
+                    android:hint="Enter password..."
+                    android:paddingStart="5dp"
+                    android:textColorHint="#2F2F2F"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:gravity="start"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="30dp"
+            app:cardBackgroundColor="@color/teal_200"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp">
+
+            <TextView
+                android:id="@+id/txtaddData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:gravity="center"
+                android:text="Add data"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
